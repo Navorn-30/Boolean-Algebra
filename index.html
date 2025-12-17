@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Algebra</title>
+    <link rel="stylesheet" href="./src/css/output.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="mt-50 shadow-lg w-[30%] m-auto pb-8 bg-gray-100 rounded-md">
+            <section>
+                <div class="bg-gray-200 pt-3.75 pb-3.75 rounded-md">
+                    <p class="text-[30px] font-semibold ms-5">Logic <span id="textOp">AND</span></p>
+                    <div class="border-s-4 border-green-500 bg-white m-5 p-3.75">
+                        <p class="text-blue-300">print(a <span id="changeOp1" class="text-red-300"> && </span> b)</p>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-7.5 flex flex-col gap-5">
+                <div class="flex gap-25 items-center justify-center">
+                    <p class="text-[20px]">a</p>
+                    <p class="text-red-500 font-semibold text-[20px] hover:underline hover:text-red-600 hover:shadow-md cursor-pointer" id="opA"></p>
+                </div>
+                <div class="flex gap-25 items-center justify-start ps-24">
+                    <p class="text-[20px]">operator</p>
+                    <p class="text-red-500 font-semibold text-[20px] hover:underline hover:text-red-600 hover:shadow-md cursor-pointer" id="symbolOp">&&</p>
+                </div>
+                <div class="flex gap-25 items-center justify-center">
+                    <p id="block" class="text-[20px]">b</p>
+                    <p class="text-red-500 font-semibold text-[20px] hover:underline hover:text-red-600 hover:shadow-md cursor-pointer" id="opB"></p>
+                </div>
+                <div class="ps-12.5 flex gap-25">
+                    <p id="output" class="text-[20px] text-gray-300" >print(a <span id="changeOp2">&&</span> b)</p>
+                    <p class="text-red-500 font-semibold text-[20px] hover:underline hover:text-red-600 hover:shadow-md" id="showResult"></p>
+                </div>
+            </section>
+            <div class="flex justify-center items-center ms-25 pt-3">
+                <button id="run" class="bg-blue-500 rounded-md text-white px-5 py-1.5 hover:bg-blue-600">Run</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
